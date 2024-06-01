@@ -78,6 +78,7 @@ void Graph::load_from_file(const std::string& filename)
                     next_station_index = stations.size() - 1;
                 }
                 stations[station_index].edges.push_back({next_station_index, costs[i]});
+                stations[next_station_index].edges.push_back({station_index, costs[i]});
             }
         }
     }
