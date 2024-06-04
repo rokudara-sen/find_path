@@ -45,7 +45,7 @@ void Graph::load_from_file(const std::string& filename)
     if(!file.is_open())
     {
         // wenn datei nicht geöffnet werden kann, gib fehler aus
-        std::cerr << "konnte datei nicht öffnen: " << filename << "\n";
+        std::cerr << "Konnte datei nicht öffnen: " << filename << "\n";
         return;
     }
 
